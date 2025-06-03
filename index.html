@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>User Guide</title>
     <style>
         /* Global Styles */
@@ -64,7 +64,7 @@
         }
 
         nav a {
-            color: #FFD700; 
+            color: #FFD700;
             text-decoration: none;
             padding: 10px 15px;
             transition: all 0.3s ease;
@@ -97,9 +97,26 @@
             flex: 1 1 30%;
             margin-left: -10px;
             max-width: 50%;
+            /* New styles to force white text on left sidebar */
             color: white;
             text-align: left;
-            
+        }
+
+        aside h2,
+        aside ul,
+        aside li,
+        aside a {
+            color: white;
+        }
+
+        aside a {
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        aside a:hover {
+            color: #FFD700;
+            text-decoration: underline;
         }
 
         .content {
@@ -126,6 +143,7 @@
             background-color: #243B55;
             padding: 15px;
             border-radius: 5px;
+            color: white;
         }
 
         .article-content.active {
@@ -138,6 +156,7 @@
             padding: 20px;
             margin-top: 30px;
             text-align: center;
+            color: white;
         }
 
         /* Button Styles */
@@ -182,7 +201,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="logo.png" alt="Company Logo">
+                <img src="logo.png" alt="Company Logo" />
             </div>
             <div class="header-text">
                 <h1>FINNDEMY User Guide</h1>
@@ -208,9 +227,7 @@
             <h2>Quick Links</h2>
             <ul>
                 <li><a href="login.html" onclick="event.stopPropagation();">How to login</a></li>
-
-                   <li><a href="Payments & Subscription.html">Payments & Subscription</a></li>
-
+                <li><a href="Payments & Subscription.html">Payments & Subscription</a></li>
                 <li><a href="Course Enrollment & Access.html" data-target="claimBenefits">Course Enrollment & Access</a></li>
                 <li><a href="#" data-target="viewProfile">How to view my profile</a></li>
                 <li><a href="#" data-target="editProfile">How to edit my profile</a></li>
@@ -402,3 +419,4 @@
     </script>
 </body>
 </html>
+
